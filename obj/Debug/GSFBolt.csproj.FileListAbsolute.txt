@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Bentley\ProStructures V8i S8\ProStructures\mdlapps\GSFBolt.dll
+C:\projects\GSFBolt\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\GSFBolt\obj\Debug\GSFBolt.dll
+C:\projects\GSFBolt\obj\Debug\GSFBolt.pdb

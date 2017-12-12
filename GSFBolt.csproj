@@ -1,0 +1,159 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14128E44-16C3-4064-8EFD-00AD8F427875}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>GSFBolt</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GSFBolt</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ValidateMicroStationAddIns>true</ValidateMicroStationAddIns>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>$(MS)mdlapps</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(MS)Assemblies\ECFramework\Bentley.General.1.0.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="$(MS)Assemblies\Bentley.Interop.MicroStationDGN.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="$(MS)Assemblies\Bentley.MicroStation.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="$(MS)Assemblies\Bentley.MicroStation.Interfaces.1.0.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="$(MS)Assemblies\ECFramework\Bentley.Windowing.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="$(MS)ustation.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="$(MS)Prg\ProStructuresNet.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="$(MS)Prg\PSX_PlugInBase.dll">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddInMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmCreateTensionControlBolt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tcBolt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="boltDb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KeyinCommands.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WCFixedBorder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <!-- <EmbeddedResource Include="frmCreateTensionControlBolt.resources">
+      <DependentUpon>frmCreateTensionControlBolt.cs</DependentUpon>
+    </EmbeddedResource> -->
+    <None Include="ProSteelAddIn.mke" />
+    <EmbeddedResource Include="tcBoltIcon.bmp" />
+    <EmbeddedResource Include="ToTCBoltIcon.ico" />
+    <EmbeddedResource Include="CancelIcon.ico" />
+    <EmbeddedResource Include="OkIcon.ico" />
+    <EmbeddedResource Include="InfoIcon.ico" />
+    <EmbeddedResource Include="GSFBolt.commands.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

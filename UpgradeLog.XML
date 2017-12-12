@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="GSFBolt">
+</Property><Property Name="Solution File" Value="C:\projects\GSFBolt\GSFBolt.sln">
+</Property><Property Name="Date" Value="Monday, October 02, 2017">
+</Property><Property Name="Time" Value="11:19:10 AM">
+</Property></Properties><Event ErrorLevel="0" Project="GSFBolt" Source="GSFBolt.csproj" Description="Project file successfully backed up as C:\projects\GSFBolt\Backup\GSFBolt.csproj">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="AddInMain.cs" Description="File successfully backed up as C:\projects\GSFBolt\Backup\AddInMain.cs">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\projects\GSFBolt\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="frmCreateTensionControlBolt.cs" Description="File successfully backed up as C:\projects\GSFBolt\Backup\frmCreateTensionControlBolt.cs">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="tcBolt.cs" Description="File successfully backed up as C:\projects\GSFBolt\Backup\tcBolt.cs">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="boltDb.cs" Description="File successfully backed up as C:\projects\GSFBolt\Backup\boltDb.cs">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="KeyinCommands.cs" Description="File successfully backed up as C:\projects\GSFBolt\Backup\KeyinCommands.cs">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="WCFixedBorder.cs" Description="File successfully backed up as C:\projects\GSFBolt\Backup\WCFixedBorder.cs">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="ProSteelAddIn.mke" Description="File successfully backed up as C:\projects\GSFBolt\Backup\ProSteelAddIn.mke">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="tcBoltIcon.bmp" Description="File successfully backed up as C:\projects\GSFBolt\Backup\tcBoltIcon.bmp">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="ToTCBoltIcon.ico" Description="File successfully backed up as C:\projects\GSFBolt\Backup\ToTCBoltIcon.ico">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="CancelIcon.ico" Description="File successfully backed up as C:\projects\GSFBolt\Backup\CancelIcon.ico">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="OkIcon.ico" Description="File successfully backed up as C:\projects\GSFBolt\Backup\OkIcon.ico">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="InfoIcon.ico" Description="File successfully backed up as C:\projects\GSFBolt\Backup\InfoIcon.ico">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="GSFBolt.commands.xml" Description="File successfully backed up as C:\projects\GSFBolt\Backup\GSFBolt.commands.xml">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="GSFBolt.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="GSFBolt" Source="GSFBolt.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GSFBolt" Source="GSFBolt.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

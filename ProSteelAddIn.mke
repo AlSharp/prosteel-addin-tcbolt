@@ -1,0 +1,34 @@
+#----------------------------------------------------------------------
+#
+#  $Copyright: (c) 2007 Bentley Systems, Incorporated. All rights reserved. $
+#
+#  Application Make File
+#
+#     $Source: /miscdev-root/miscdev/dotnet/examples/CellUtility/step4/CellUtility.mke,v $
+#    $RCSfile: CellUtility.mke,v $
+#   $Revision: 1.2 $
+#       $Date: 2007/04/09 19:14:06 $
+#
+#  "MicroStation" is a registered trademark and "MDL" and "MicroCSL"
+#  are trademarks of Bentley Systems, Inc.
+#
+#  Limited permission is hereby granted to reproduce and modify this
+#  copyrighted material provided that the resulting code is used only
+#  in conjunction with Bentley Systems products under the terms of the
+#  license agreement provided therein, and that this notice is retained
+#  in its entirety in any such reproduction or modification.
+#
+#----------------------------------------------------------------------
+%include    mdl.mki
+
+appName = CellUtility
+
+MSB-BaseIntermediateOutputPath = $(mdlapps)$(appName)/
+MSB-OutputPath=$(mdlapps)
+o = $(MSB-BaseIntermediateOutputPath)$(Configuration)/
+
+buildSolution:
+    !~@mkdir $(o)
+    |[== Building $(appName) ==]
+    ~task msbuild $(CommonMSBuildOpts) -i:Projects=$(_MakeFilePath)$(appName).csproj
+

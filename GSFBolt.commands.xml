@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<KeyinTree xmlns="http://www.bentley.com/schemas/1.0/MicroStation/AddIn/KeyinTree.xsd">
+    
+    <!--The commands.xml contains 3 main sections. <RootKeyinTable> defines the root of the 
+        command table tree. <SubKeyinTables> defines all of the subtrees that appear in the
+        tree. <KeyinHandlers> provides a mapping from key-in string to the method that handles
+        the key-in.-->
+
+    <!--Define the root. The entry for the root is very similar to an entry in the
+        table of subentries. The diference is that the entry for the root is labelled
+        RootKeyinTable, but an entry for a subtable is labelled as KeyinTable.-->
+    <RootKeyinTable ID="root">
+        <Keyword SubtableRef="MyProSteelAddInCommands" 
+                CommandClass="MacroCommand" CommandWord="GSFBolt"><Options Required="true" /></Keyword>
+    </RootKeyinTable>
+
+
+    <!--Define subtables-->
+    <SubKeyinTables>
+        <!--GSFBolt subtable-->
+        <KeyinTable ID="MyProSteelAddInCommands">
+            <!-- <Keyword CommandWord="Start"> </Keyword> -->
+            <Keyword CommandWord="Action1"> </Keyword>
+            <Keyword CommandWord="Action2" SubtableRef="Action"><Options Default="true"/> </Keyword>
+        </KeyinTable>
+
+        <!--Action subtable-->
+        <KeyinTable ID="Action">
+            <Keyword CommandWord="SubAction1"> </Keyword>
+            <Keyword CommandWord="SubAction2"> </Keyword>
+        </KeyinTable>
+
+    </SubKeyinTables>
+
+    <!--Define a mapping from key-in to the method that handles the key-in.-->
+    <KeyinHandlers>
+        <!-- <KeyinHandler Keyin="GSFBolt Start" 
+            Function="GSFBolt.KeyinCommands.StartGSFBolt"/> -->
+        <KeyinHandler Keyin="GSFBolt Action1" 
+            Function="GSFBolt.KeyinCommands.Action1"/>
+        <KeyinHandler Keyin="GSFBolt Action2 SubAction1" 
+            Function="GSFBolt.KeyinCommands.Action2SubAction1"/>
+        <KeyinHandler Keyin="GSFBolt Action2 SubAction2" 
+            Function="GSFBolt.KeyinCommands.Action2SubAction2"/>
+    </KeyinHandlers>
+
+
+</KeyinTree>
+ 
